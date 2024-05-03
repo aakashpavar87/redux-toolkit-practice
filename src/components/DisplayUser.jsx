@@ -19,28 +19,30 @@ function DisplayUser() {
       <div className="w-[60%] mx-auto my-6 ">
         <ul className="my-10 flex flex-col justify-center items-center">
           {users.length === 0 && (
-            <li className="p-4 font-bold w-full border-b-2 flex justify-between items-center">
-              <span>Dummy User Click On add user to add users</span>{" "}
-              <button className="btn p-3 rounded-lg font-semibold bg-amber-200 text-gray-800">
+            <li className="p-4 font-bold w-full border-b-2 flex gap-2 justify-between items-center">
+              <span className="text-sm md:text-base">
+                Dummy User Click On add user to add users
+              </span>{" "}
+              <button className="btn p-1 md:p-3 rounded-lg font-semibold bg-amber-200 text-gray-800">
                 Delete
               </button>{" "}
             </li>
           )}
           {users.map((user, id) => (
             <li
-              className="p-4 font-bold w-full border-b-2 flex justify-between items-center"
+              className="p-4 font-bold w-full border-b-2 flex justify-between gap-2 items-center"
               key={id}
             >
               <span>{user}</span>{" "}
-              <div>
+              <div className="flex flex-col md:flex-row gap-2">
                 <button
-                  className="btn p-3 rounded-lg font-semibold bg-green-400 text-white"
+                  className="btn p-1 md:p-3 rounded-lg font-semibold bg-green-400 text-white"
                   onClick={() => updateMyUser(fakeNameGenerator(), id)}
                 >
                   Update
                 </button>{" "}
                 <button
-                  className="btn p-3 rounded-lg font-semibold bg-amber-200 text-gray-800"
+                  className="btn p-1 md:p-3 rounded-lg  font-semibold bg-amber-200 text-gray-800"
                   onClick={() => deleteOneUser(id)}
                 >
                   Delete

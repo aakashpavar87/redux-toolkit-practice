@@ -12,7 +12,7 @@ function AddNewUser() {
       <div className="flex w-[60%] mx-auto my-6  justify-between">
         <h3 className="text-3xl">List Of Users</h3>
         <button
-          className="p-4 rounded-lg bg-cyan-600 text-gray-200 hover:bg-cyan-300 hover:text-gray-900 transition-all"
+          className="p-2 md:p-4 rounded-lg bg-cyan-600 text-gray-200 hover:bg-cyan-300 hover:text-gray-900 transition-all"
           onClick={() => {
             addNewUser(fakeUserGenerator());
           }}

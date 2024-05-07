@@ -14,5 +14,4 @@ const adminSlice = createSlice({
     });
   },
 });
-export const { updateOneUser } = adminSlice.actions;
 export default adminSlice.reducer;

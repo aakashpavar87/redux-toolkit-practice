@@ -23,7 +23,7 @@ function DisplayUser() {
               <span className="text-sm md:text-base">
                 Dummy User Click On add user to add users
               </span>{" "}
-              <button className="btn p-1 md:p-3 rounded-lg font-semibold bg-amber-200 text-gray-800">
+              <button className="btn p-1 md:p-3  rounded-3xl font-semibold  bg-gradient-to-br from-purple-400 to-purple-800 text-gray-200">
                 Delete
               </button>{" "}
             </li>
